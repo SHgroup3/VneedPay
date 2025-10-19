@@ -71,8 +71,8 @@ const Dropdown = ({ buttonContent, menuItems, flagUrl, textLabel }) => {
 // Utility component to render sub-links (used in desktop sub-nav and mobile flyout)
 const SubLinks = ({ type, setMobileOpen }) => {
   const links = type === "personal" 
-    ? [{ label: "Send Money", href: "/send-money" }, { label: "Rate and Fees", href: "/fees" }]
-    : [{ label: "Make Payment", href: "/payments" }, { label: "Rate and Fees", href: "/fees" }];
+    ? [{ label: "Send Money", href: "/" }, { label: "Rate and Fees", href: "/loans"  }]
+    : [{ label: "Make Payment", href: "/payments" }, { label: "Rate and Fees", href: "/loans"  }];
   
   return (
     <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 px-2 sm:px-0 pt-2 sm:pt-0">
